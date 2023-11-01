@@ -14,6 +14,6 @@ Successful operation of the range sensor requires, of course, robust detection o
 
 In the next figure, we show some of the details of the Tx and Rx waves discussed above. 
 
-![Signals](https://github.com/michaelalex94536/Assorted-ML/blob/main/UltrasonicSensorTesting/images/pulse-echo.jpg)
+![Signals](https://github.com/michaelalex94536/Assorted-ML/blob/main/UltrasonicSensorTesting/images/pulse-echo.jpeg)
 
 
