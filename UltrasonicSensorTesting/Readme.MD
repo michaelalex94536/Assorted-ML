@@ -14,6 +14,8 @@ Successful operation of the range sensor requires, of course, robust detection o
 
 
 
+### Ultrasonic sensor Rx and Tx signals
+
 In the next figure, we show some of the details of the Tx and Rx waves discussed above. 
 
 The Tx wave is generated or launched during the Excitation stage of device operation.  A high voltage square wave is applied to a membrane inside the sensor chip, causing the membrane to vibrate, which in turn causes the emission a Pulse signal to be transmitted from the sensor.  This is depicted by the blue trace in the figure.  (The frequency of the acoustic wave is the same as the frequency of the Excitation voltage source square wave.) The Excitation square wave is applied for a relatively short time interval; the transmitted wave or Pulse signal is essentially a short burst of ultrasonic energy.  
