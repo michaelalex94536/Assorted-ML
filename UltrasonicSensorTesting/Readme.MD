@@ -27,7 +27,7 @@ Looking at the transmitted and received pulses, we can see there aren't many par
 Now, one must keep in mind ultrasonic MEMs TOF sensors like the one described above are capable of measuring distances of up to several meters.  This has significant implications for testing the devices, especially in high-volume manufacturing.  The test chambers and targets need to be large and bulky in order to facilitate the long-range testing needed to determine the maximum range of the device. Multiple devices can not be tested simultaneously in the same chamber using the same target due to crosstalk and interference from the other devices under test (DUTs). Furthermore, ultrasonic signals are notoriously hard to suppress and attenuate; reflections from the echo chamber walls and other test fixturing requires the test chamber be specially made in order to minimize undesired echos and spurious reflections that may interfere with accurate distance measurements. Since the Echo or reflected signal intensity is the primary metric for determining sensor performance, it would be ideal if one could predict this signal without the complexities of using a large, complex echo chamber and target assembly.  
 
 
-![Signals](https://github.com/michaelalex94536/Assorted-ML/blob/main/UltrasonicSensorTesting/images/pulse-echo.jpeg)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;![Signals](https://github.com/michaelalex94536/Assorted-ML/blob/main/UltrasonicSensorTesting/images/pulse-echo.jpeg)
 
 #### Figure 2  Illustration of the transmitted signal (Pulse signal) and reflected signal (Echo signal) of an ultrasonic range sensor. 
 
