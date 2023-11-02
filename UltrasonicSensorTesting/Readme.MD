@@ -16,14 +16,20 @@ Successful operation of the range sensor requires, of course, robust detection o
 
 ### Ultrasonic sensor Rx and Tx signals
 
-In the next figure, we show some of the details of the Tx and Rx waves discussed above. 
+In the next figure, we show some of the details of the Tx and Rx waves discussed above [2]. 
 
 The Tx wave is generated or launched during the Excitation stage of device operation as seen in the figure.  A relatively high voltage square wave is applied to a membrane inside the sensor chip, causing the membrane to vibrate, which in turn causes the emission of an acoustic Pulse signal to be transmitted from the sensor.  This is depicted by the blue trace in the figure.  (The frequency of the acoustic wave is the same as the frequency of the Excitation voltage source square wave.) The Excitation square wave is applied for a relatively short time interval; the transmitted wave or Pulse signal is essentially a short burst of ultrasonic energy.  
 
 We see in the figure a finite time is required before the maximum voltage in the Excitation phase is reached.  Furthermore, even after the driving voltage is terminated at the end of the Excitation phase, the Pulse signal does not abruptly end; the transducer is in a "Ring-down" state and the Pulse signal gradually dissipates.  The behavior seen is essentially that of a mechanical spring-mass-damper system.  Eventually, the Tx pulse is reflected and returns from a distant target; the Rx pulse or Echo signal is shown as the orange trace in the figure.  The time of flight (TOF) is the time difference between launch of the Pulse signal and receipt of the Echo signal.  We note that should the Echo pulse return prior to the end of the Ring-down phase - in the so-called Blind area shown in the figure, the time of flight can not be measured accurately.  To keep the Blind area as short as possible, the Excitation and Ring-down phases should be as short as possible, within practical limits.  
 
+Looking at the transmitted and received pulses, we can see there aren't too many parameters one needs to measure to characterize the performance of the sensor.  We can measure the amplitude of the transmitted signal 
+
+
+
 ![Signals](https://github.com/michaelalex94536/Assorted-ML/blob/main/UltrasonicSensorTesting/images/pulse-echo.jpeg)
 
 
 [1] Texas Instruments Application Report SNAA220A, Ultrasonic Sensing Basics for Liquid Level Sensing, Flow Sensing, and Fluid Identification Applications, March 2015 
+
+[2] Reference this figure
 
