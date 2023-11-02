@@ -30,6 +30,17 @@ Now, one must keep in mind ultrasonic MEMs TOF sensors like the one described ab
 ##### Figure 2  Illustration of the transmitted signal (Pulse signal in blue) and reflected signal (Echo signal in orange) of an ultrasonic range sensor. 
 <br/><br/>
 
+### The UltraSonicSensorAnalysis Jupyter notebook
+
+Here we explain the "UltrasonicSensorAnalysis.ipynb" Jupyter notebook.  We first read-in a data file which has Frequency, Ring-down, Excitation, and Echo data for approximately 900 sensors tested in production. The neural network model features are Frequency, Ring-down, and Excitation, and our goal is to predict the Echo signal.  If the predictions are accurate, it means we are capable of estimating the sensor reflected signal amplitude without the need for bulky and inconvenient target and echo chamber hardware. 
+
+The measurement data is randomly split up into training and test sets by Die ID, and we confirm there is no "crosstalk" between the training and test data.  The ratio of data used for training/testing can be selected by the user, where the default ratio is 75/25.  Then, a very simple neural network with two hidden layers is constructed in Keras, where each hidden layer is followed by a ReLu activation function. We see the default model has just under 100 parameters, so training can be done without need for a GPU. 
+
+![Signals](https://github.com/michaelalex94536/Assorted-ML/blob/main/UltrasonicSensorTesting/images/training.jpg)
+
+![Signals](https://github.com/michaelalex94536/Assorted-ML/blob/main/UltrasonicSensorTesting/images/predictions.jpg)
+
+
 
 [1]  Texas Instruments Application Report SNAA220A, Ultrasonic Sensing Basics for Liquid Level Sensing, Flow Sensing, and Fluid Identification Applications, March 2015 
 
