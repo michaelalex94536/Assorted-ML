@@ -4,7 +4,7 @@ Practical, high volume testing of ultrasonic range or time of flight (TOF) senso
 
 ### The basic operation of an ultrasonic range sensor
 
-In Figure 1 we see a general overview of how a single transducer range sensor works.  An ASIC or circuit in the sensor chip generates a start signal which causes a vibrating membrane in the transducer to emit a transmitted ultrasonic wave, the Tx signal.  Upon launching the Tx signal, the circuit is put into receive mode in order to detect the reflected wave from the target, the Rx signal. The Rx signal causes the same membrane that launched the Tx signal to vibrate, producing a voltage that the circuit measures.  A timer in the chip counts the time between the Tx and Rx waves, and knowing the speed of sound in the environment, the distance to the target is computed.  In present day ultrasonic range sensors, the vibrating membrane, the Tx and Rx circuitry, as well as the timer are all contained in a small, millimeter-sized package; the ultrasonic Tx and Rx signals are emitted from a small orifice measuring several hundred microns in diameter in the top of the package. 
+In Figure 1 we see a general overview of how a single transducer range sensor works [1].  An ASIC or circuit in the sensor chip generates a start signal which causes a vibrating membrane in the transducer to emit a transmitted ultrasonic wave, the Tx signal.  Upon launching the Tx signal, the circuit is put into receive mode in order to detect the reflected wave from the target, the Rx signal. The Rx signal causes the same membrane that launched the Tx signal to vibrate, producing a voltage that the circuit measures.  A timer in the chip counts the time between the Tx and Rx waves, and knowing the speed of sound in the environment, the distance to the target is computed.  In present day ultrasonic range sensors, the vibrating membrane, the Tx and Rx circuitry, as well as the timer are all contained in a small, millimeter-sized package; the ultrasonic Tx and Rx signals are emitted from a small orifice measuring several hundred microns in diameter in the top of the package. 
 
 Successful operation of the range sensor requires, of course, robust detection of the Rx signal.  In addition to the distance between the sensor and the target, the amplitude of the Rx signal is a function of the strength of the Tx signal.  Furthermore, the device operating frequency and other characteristics of the device (the target and the transmission medium) also determine the intensity of the Rx signal.  
 
@@ -20,4 +20,6 @@ We see in the figure a finite time is required before the maximum voltage in the
 
 ![Signals](https://github.com/michaelalex94536/Assorted-ML/blob/main/UltrasonicSensorTesting/images/pulse-echo.jpeg)
 
+
+[1] Texas Instruments Application Report SNAA220A, Ultrasonic Sensing Basics for Liquid Level Sensing, Flow Sensing, and Fluid Identification Applications, March 2015 
 
