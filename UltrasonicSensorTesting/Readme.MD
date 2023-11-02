@@ -34,11 +34,13 @@ Now, one must keep in mind ultrasonic MEMs TOF sensors like the one described ab
 
 Here we explain the "UltrasonicSensorAnalysis.ipynb" Jupyter notebook.  We first read-in a data file which has Frequency, Ring-down, Excitation, and Echo data for approximately 900 sensors tested in production. The neural network model features are Frequency, Ring-down, and Excitation, and our goal is to predict the Echo signal.  If the predictions are accurate, it means we are capable of estimating the sensor reflected signal amplitude without the need for bulky and inconvenient target and echo chamber hardware. 
 
-The measurement data is randomly split up into training and test sets by Die ID, and we confirm there is no "crosstalk" between the training and test data.  The ratio of data used for training/testing can be selected by the user, where the default ratio is 75/25.  Then, a very simple neural network with two hidden layers is constructed in Keras, where each hidden layer is followed by a ReLu activation function. We see the default model has just under 100 parameters, so training can be done without need for a GPU. 
+The measurement data is randomly split up into training and test sets by Die ID, and we confirm there is no "crosstalk" between the training and test data.  The ratio of data used for training/testing can be selected by the user, where the default ratio is 75/25.  Then, a very simple neural network with two hidden layers is constructed in Keras, where each hidden layer is followed by a ReLu activation function. We see the default model has just under 100 parameters, so training can be done without need for a GPU. In Figure 3 we see the training and test loss versus the epoch number.  AT the end of training the test loss is slightly higher that the training loss.  Finally, in Figure 4 we show the predicted versus measured Echo signal amplitude.  The correlation is excellent, showing sensor performance can be accurately predicted using a small set of easily-measured test parameters. 
 
 ![Signals](https://github.com/michaelalex94536/Assorted-ML/blob/main/UltrasonicSensorTesting/images/training.jpg)
+##### Figure 3  Loss for the training and test data sets vs. epoch. 
 
 ![Signals](https://github.com/michaelalex94536/Assorted-ML/blob/main/UltrasonicSensorTesting/images/predictions.jpg)
+##### Figure 4  Predicted versus measured Echo signal intensity. The dashed red line shows the linear best fit line; the solid black line is the 1:1 regression.  
 
 
 
