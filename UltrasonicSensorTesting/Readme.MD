@@ -31,8 +31,7 @@ Now, one must keep in mind ultrasonic MEMs TOF sensors like the one described ab
 
 #### Figure 2  Illustration of the transmitted signal (Pulse signal) and reflected signal (Echo signal) of an ultrasonic range sensor. 
 <br/><br/>
-<br/><br/>
-<br/><br/>
+
 
 [1]  Texas Instruments Application Report SNAA220A, Ultrasonic Sensing Basics for Liquid Level Sensing, Flow Sensing, and Fluid Identification Applications, March 2015 
 
