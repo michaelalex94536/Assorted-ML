@@ -1,6 +1,8 @@
 ### Introduction
 
-Practical, high volume testing of ultrasonic range or time of flight (TOF) sensors presents challenges.  Here, we show how machine learning was used to simplify test hardware while at the same time allow one to characterize a key sensor parameter - the amplitude of the return signal reflected from a target.  First, we need to explain the basic principles of how ultrasonic range sensors work.  
+Practical, high volume testing of ultrasonic range or time of flight (TOF) sensors presents challenges.  Here, we show how machine learning was used to simplify test hardware while at the same time allow one to characterize a key sensor parameter - the amplitude of the return signal reflected from a target.  
+
+We first explain the basic principles of how ultrasonic range sensors work.  Then, we show a simple example of the transmitted and received ultrasonic signals and explain some of the key parameters of interest in characterizing sensor performance.
 
 ### The basic operation of an ultrasonic range sensor
 
