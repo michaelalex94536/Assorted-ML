@@ -36,6 +36,10 @@ Here we explain the "UltrasonicSensorAnalysis.ipynb" Jupyter notebook.  We first
 
 The measurement data is randomly split up into training (validation) and test sets by Die ID, and we confirm there is no "crosstalk" between the training and test data.  The ratio of data used for training/testing can be selected by the user, where the default ratio is 75/25.  Then, a very simple neural network with two hidden layers is constructed in Keras, where each hidden layer is followed by a ReLu activation function. We see the default model has just under 100 parameters, so training can be done without need for a GPU. In Figure 3 we see the training (validation) and test loss versus the epoch number.  At the end of training the test loss is slightly higher that the training loss.  Finally, in Figure 4 we show the predicted versus measured Echo signal amplitude.  The correlation is excellent, showing sensor performance can be accurately predicted using a small set of easily-measured test parameters. And most importantly, the refelcted signal amplitude is predicted without the need for the bulky, expensive "echo" chamber hardware. 
 
+We also have a PyTorch version of the notebook that uses the same data set and Neural Network model as the Keras version. 
+
+
+
 ![Signals](https://github.com/michaelalex94536/Assorted-ML/blob/main/UltrasonicSensorTesting/images/training.jpg)
 ##### Figure 3  Loss for the training and test data sets vs. epoch. 
 
